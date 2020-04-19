@@ -1,4 +1,5 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3.7
+import pyperclip
 import string
 import secrets
 import random
