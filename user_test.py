@@ -107,3 +107,25 @@ def test_check_if_userExist(self):
         
         Credentials.credentials_list = []
         User.users_list = []
+
+
+         def test_save_credentials(self):
+
+        '''
+        A funtion to check if the method save_credentials is saving the new credenntials as expected.
+        '''
+        
+        self.new_credential.save_credentials()
+        twitter = Credentials("twitter", "Just Paul","@Paulenigmatico", "paulwamaria@gmail.com","leejones1" )
+        twitter.save_credentials()
+
+        self.assertEqual(len(Credentials.credentials_list), 2)
+
+
+    def test_delete_credentials(self):
+
+        self.new_credential.save_credentials()
+        twitter = Credentials("twitter", "Just Paul","@Paulenigmatico", "paulwamaria@gmail.com","leejones1" )
+        twitter.save_credentials()
+        self.new_credential.delete_credentials()
+        self.assertEqual(len(Credentials.credentials_list),1)
