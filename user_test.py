@@ -129,3 +129,29 @@ def test_check_if_userExist(self):
         twitter.save_credentials()
         self.new_credential.delete_credentials()
         self.assertEqual(len(Credentials.credentials_list),1)
+
+
+
+def test_display_credentials(self):
+        
+        '''
+        A funtion to test if we are able to display the right credentials
+        '''
+        self.new_credential.save_credentials()
+        twitter = Credentials("twitter", "salemitho","@salemmatico", "salemowino18@gmail.com","leejones1" )
+        twitter.save_credentials()
+        google = Credentials("google", "Salem Owino","Saa-lem", "salemowino18@gmail.com","leejones2" )
+        google.save_credentials()
+
+        self.assertEqual(len(Credentials.display_credentials(google.username)),1)
+
+
+    def test_find_by_account_type(self):
+        '''
+        Test to check if the find_by_account_type method returns the correct credential
+        '''
+        self.new_credential.save_credentials()
+        google = Credentials("google", "Salem Owino","Saa-lem", "salemowino18@gmail.com","leejones2" )
+        google.save_credentials()
+        credential_found = Credentials.find_by_account_type('google')
+        self.assertEqual(credential_found,google)
