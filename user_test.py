@@ -155,3 +155,25 @@ def test_display_credentials(self):
         google.save_credentials()
         credential_found = Credentials.find_by_account_type('google')
         self.assertEqual(credential_found,google)
+
+         def test_copy_credentials(self):
+        '''
+        A funtcion to test to check if the copy a credential method copies the correct credential
+        '''
+        self.new_credential.save_credentials()
+        google = Credentials("google", "Salem Owino","salemitho", "salemowino18@gmail.com","leejones2" )
+        google.save_credentials()
+        found_credential = None
+        for credential in Credentials.user_credentials_list:
+                found_credential = Credentials.find_by_account_type(credential.account_type)
+                return pyperclip.copy(found_credential.account_password)
+        Credentials.copy_credentials(self.new_credential.account_type)
+        self.assertEqual('leejones2', pyperclip.paste())
+        print(pyperclip.paste())
+
+
+
+
+
+if __name__=='__main__':
+  unittest.main()
