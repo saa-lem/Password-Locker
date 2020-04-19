@@ -70,3 +70,40 @@ def test_check_if_userExist(self):
         return current_user
         test_user.save_userDetails()
         self.assertEqual(len(User.users_list),2)
+def test_check_if_userExist(self):
+
+        '''
+        A test function to ensure the working of the check if userExist function.
+        '''
+        self.new_user = User("test","user","0780404626","helloemryon@gmail.com","Pwamaria","leejones1")
+        self.new_user.save_userDetails()
+
+        user2 = User("test","user","0780404626","helloemryon@gmail.com","Pwamaria","leejones1")
+
+        for user in User.users_list:
+            if user.username == user2.username and user.password == user2.password:
+                current_user = user.first_name
+        return current_user
+        '''
+        A test function to ensure the working of the check if userExist function.
+        '''
+        self.new_user = User("test","user","0780404626","helloemryon@gmail.com","Pwamaria","leejones1")
+        self.new_user.save_userDetails()
+
+        user2 = User("test","user","0780404626","helloemryon@gmail.com","Pwamaria","leejones1")
+
+        for user in User.users_list:
+            if user.username == user2.username and user.password == user2.password:
+                current_user = user.first_name
+        return current_user
+        test_user.save_userDetails()
+        self.assertEqual(len(User.users_list),2)
+
+
+ def tearDown(self):
+        '''
+        A funtcion to clear the credential list after every test
+        '''
+        
+        Credentials.credentials_list = []
+        User.users_list = []
