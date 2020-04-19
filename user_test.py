@@ -75,10 +75,10 @@ def test_check_if_userExist(self):
         '''
         A test function to ensure the working of the check if userExist function.
         '''
-        self.new_user = User("test","user","0780404626","helloemryon@gmail.com","Pwamaria","leejones1")
+        self.new_user = User("test","user","0757871491","salemowino18@gmail.com","saalem","leejones1")
         self.new_user.save_userDetails()
 
-        user2 = User("test","user","0780404626","helloemryon@gmail.com","Pwamaria","leejones1")
+        user2 = User("test","user","0757871491","salemowino18@gmail.com","saalem","leejones1")
 
         for user in User.users_list:
             if user.username == user2.username and user.password == user2.password:
@@ -87,10 +87,10 @@ def test_check_if_userExist(self):
         '''
         A test function to ensure the working of the check if userExist function.
         '''
-        self.new_user = User("test","user","0780404626","helloemryon@gmail.com","Pwamaria","leejones1")
+        self.new_user = User("test","user","0757871491","salemowino18@gmail.com","saalem","leejones1")
         self.new_user.save_userDetails()
 
-        user2 = User("test","user","0780404626","helloemryon@gmail.com","Pwamaria","leejones1")
+        user2 = User("test","user","0757871491","salemowino18@gmail.com","saalem","leejones1")
 
         for user in User.users_list:
             if user.username == user2.username and user.password == user2.password:
@@ -116,7 +116,7 @@ def test_check_if_userExist(self):
         '''
         
         self.new_credential.save_credentials()
-        twitter = Credentials("twitter", "Just Paul","@Paulenigmatico", "paulwamaria@gmail.com","leejones1" )
+        twitter = Credentials("twitter", "Just Salem","@salemitho", "salemowino18@gmail.com","leejones1" )
         twitter.save_credentials()
 
         self.assertEqual(len(Credentials.credentials_list), 2)
@@ -125,7 +125,7 @@ def test_check_if_userExist(self):
     def test_delete_credentials(self):
 
         self.new_credential.save_credentials()
-        twitter = Credentials("twitter", "Just Paul","@Paulenigmatico", "paulwamaria@gmail.com","leejones1" )
+        twitter = Credentials("twitter", "Just Salem","@salemitho", "salemowino18@gmail.com","leejones1" )
         twitter.save_credentials()
         self.new_credential.delete_credentials()
         self.assertEqual(len(Credentials.credentials_list),1)
