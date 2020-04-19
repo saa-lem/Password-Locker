@@ -41,3 +41,32 @@ class TestUser(unittest.TestCase):
 
         self.new_user.delete_userDetails()
         self.assertEqual(len(User.users_list),1)
+
+def test_check_if_userExist(self):
+
+        '''
+        A test function to ensure the working of the check if userExist function.
+        '''
+        self.new_user = User("test","user","0757871491","salemowino18@gmail.com","sa-lem","leejones1")
+        self.new_user.save_userDetails()
+
+        user2 = User("test","user","0757871491","salemowino@gmail.com","sa-lem","leejones1")
+
+        for user in User.users_list:
+            if user.username == user2.username and user.password == user2.password:
+                current_user = user.first_name
+        return current_user
+        '''
+        A test function to ensure the working of the check if userExist function.
+        '''
+        self.new_user = User("test","user","0757871491","salemowino18@gmail.com","saa-lem","leejones1")
+        self.new_user.save_userDetails()
+
+        user2 = User("test","user","0757871491","salemowino18@gmail.com","saa-lem","leejones1")
+
+        for user in User.users_list:
+            if user.username == user2.username and user.password == user2.password:
+                current_user = user.first_name
+        return current_user
+        test_user.save_userDetails()
+        self.assertEqual(len(User.users_list),2)
