@@ -1,5 +1,4 @@
 #!/usr/bin/env python3.6
-import pyperclip
 import string
 import secrets
 import random

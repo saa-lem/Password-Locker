@@ -1,4 +1,4 @@
-import pyperclip
+
 import string
 import secrets
 
