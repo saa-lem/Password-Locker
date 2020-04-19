@@ -5,7 +5,7 @@ from credentials import Credentials
 class TestUser(unittest.TestCase):
 
     def setUp(self):
-        self.new_user = User("Salem", "Owino", "0757871491", "salemowino18@gmail.com", "saa-lem", "leejones")
+        self.new_user = User("Salem", "Owino", "0757871491", "salemowino18@gmail.com", "saa-lem", "leejones2")
 
     def test_init(self):
         self.assertEqual(self.new_user.first_name,"Salem")
@@ -25,8 +25,19 @@ class TestUser(unittest.TestCase):
 
     def test_save_multiple_userDetails(self):
         self.new_user.save_userDetails()
-        test_user = User("test","user","0757871491","salemowino18@gmail.com","saa-lem","leejones1")
+        test_user = User("test","user","0757871491","salemowino18@gmail.com","saa-lem","leejones")
         test_user.save_userDetails()
         self.assertEqual(len(User.users_list),2)
 
 
+ def test_delete_userDetails(self):
+        '''
+        A function to test if we are able to delete user details.
+        '''
+
+        self.new_user.save_userDetails()
+        test_user = User("test","user","0757871491","salemowino18@gmail.com","saa-lem","leejones")
+        test_user.save_userDetails()
+
+        self.new_user.delete_userDetails()
+        self.assertEqual(len(User.users_list),1)
