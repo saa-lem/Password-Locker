@@ -5,7 +5,7 @@ account and store their credentials. The user also has a choice to automatically
 
 #**link
 
-https://github.com//
+https://github.com/saa-lem/Password-Locker
 
 **Developer**
 
