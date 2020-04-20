@@ -5,11 +5,11 @@ account and store their credentials. The user also has a choice to automatically
 
 #**link
 
-https://github.com//
+https://github.com/saa-lem/Password-Locker
 
 **Developer**
 
-The application is build by **Salem Owino/Emryon Developers**, who is currently a student at Moringa.
+The application is build by **Salem Owino/Software Developer**, who is currently a student at Moringa.
 
 **BDD**
 The application allows the user to create an account
@@ -19,7 +19,7 @@ The user can access all their details.
 
 **Technology used**
 
-Python3.6
+Python3.7.3
 
 **set up**
 
@@ -29,21 +29,16 @@ Python3.6
 1. install xclip
 
 
-**##  specs**
-|   Behaviour                        |  Input                                 |  Output
-
-|---------------------------------   |   :---------------------------------:  |   ------------------------------------:   |
-
-
-| Output garbage                     |    Enter Garbage                       | Output Garbage(just trying tables)  
-
-| try1                               |    try2                                |  try3
-
 
 ## Known bugs 
 
 * Copying credentials is not working as expected.
 
+**Meaning of Short Codes**
+* ln-Log in
+
+* ca-To create a new account
+* ex-To exit
 
 **contacts**
 
