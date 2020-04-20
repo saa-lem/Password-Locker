@@ -19,7 +19,7 @@ The user can access all their details.
 
 **Technology used**
 
-Python3.6
+Python3.7.3
 
 **set up**
 
