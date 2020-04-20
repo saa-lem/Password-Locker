@@ -104,7 +104,7 @@ Blog
 def main():
     print('\n')
     print("            *  *          *  *          ")
-    print("          *      *      *      *        ")
+    print("          *      *     *      *        ")
     print("         *         *  *         *       ")
     print("         *       WELCOME        *       ")
     print("         *         TO           *       ")

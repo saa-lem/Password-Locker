@@ -44,6 +44,11 @@ Python3.6
 
 * Copying credentials is not working as expected.
 
+**Meaning of Short Codes**
+* ln-Log in
+
+* ca-To create a new account
+* ex-To exit
 
 **contacts**
 
