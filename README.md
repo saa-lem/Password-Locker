@@ -9,7 +9,7 @@ https://github.com/saa-lem/Password-Locker
 
 **Developer**
 
-The application is build by **Salem Owino/Emryon Developers**, who is currently a student at Moringa.
+The application is build by **Salem Owino/Software Developer**, who is currently a student at Moringa.
 
 **BDD**
 The application allows the user to create an account
@@ -28,16 +28,6 @@ Python3.7.3
 1. install pyperclip
 1. install xclip
 
-
-**##  specs**
-|   Behaviour                        |  Input                                 |  Output
-
-|---------------------------------   |   :---------------------------------:  |   ------------------------------------:   |
-
-
-| Output garbage                     |    Enter Garbage                       | Output Garbage(just trying tables)  
-
-| try1                               |    try2                                |  try3
 
 
 ## Known bugs 
